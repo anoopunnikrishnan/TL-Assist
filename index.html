@@ -1,40 +1,37 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hotel Booking Chatbot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page with Image and Chatbot</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    #chatbox {
+    /* Full-width image */
+    .full-width-image {
       width: 100%;
-      max-width: 600px;
+      height: auto;
+    }
+
+    /* Chatbot iframe at the bottom right */
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
       height: 400px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      overflow-y: auto;
-      margin-bottom: 10px;
-    }
-    .user {
-      color: blue;
-    }
-    .bot {
-      color: green;
-    }
-    #userInput {
-      width: 80%;
-      padding: 8px;
-    }
-    #sendBtn {
-      padding: 8px 16px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
-  <h2>Welcome to Our Hotel Booking Assistant!</h2>
+  <!-- Full-width image at the top -->
+  <img src="img1.png" alt="Full Width Image" class="full-width-image">
+
+  <!-- Chatbot iframe at the bottom-right -->
+  <iframe class="chatbot" src="https
+<h2>Welcome to Our Hotel Booking Assistant!</h2>
   <div id="chatbox"></div>
   <input type="text" id="userInput" placeholder="Type a message..." />
   <button id="sendBtn">Send</button>
@@ -77,7 +74,3 @@
       if (e.key === "Enter") sendMessage();
     });
   </script>
-
-  <img src="img1.png" alt="Description of image" />
-</body>
-</html>
